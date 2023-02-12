@@ -1,4 +1,41 @@
 @import url('normalize.css');
+
+/* ==========================================================================
+   Change Scrollbars colors Chrome, Safari...
+   ========================================================================== */
+::-webkit-scrollbar{
+    width: .8em;
+}
+::-webkit-scrollbar-track{
+    background:#aeaeae;
+    border-radius: 100vw;
+    margin-block: .5em;
+}    
+::-webkit-scrollbar-thumb{
+    background:  #ee6817;
+    border: .22em solid #aeaeae;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: hsl(33 75% 20% / 0.5);
+
+}
+
+/* ==========================================================================
+Firefox Change Scrollbars colors 
+========================================================================== */
+
+@supports(scrollbar-color:#ee6817 #aeaeae){
+    *{
+        scrollbar-color: #ee6817 #aeaeae;
+        scrollbar-width: thin;
+    }
+}
+
+
+
+
 /*
 ----------------------------------
 
@@ -1304,3 +1341,11 @@ iframe, embed, object {
 .buy-theme span {padding:0 28px; position: relative; top:0; opacity: 0}
 .buy-theme:hover span {opacity: 1}
 .buy-theme a { color: #fff; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding:8px 15px; display: block }
+
+
+
+/* ==========================================================================
+   #Scrollbar
+   ========================================================================== */
+
+  
