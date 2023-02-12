@@ -4,7 +4,8 @@
    Change Scrollbars colors Chrome, Safari...
    ========================================================================== */
 ::-webkit-scrollbar{
-    width: .8em;
+    /*width: .0em; } hide scrollbar*/
+    width: 0.8em;
 }
 ::-webkit-scrollbar-track{
     background:#aeaeae;
@@ -21,6 +22,8 @@
     background: hsl(33 75% 20% / 0.5);
 
 }
+
+
 
 /* ==========================================================================
 Firefox Change Scrollbars colors 
