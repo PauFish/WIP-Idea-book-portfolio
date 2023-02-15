@@ -646,6 +646,49 @@ a.totop-link {
     text-transform: uppercase;
     font-size: 13px;
 }
+
+/* ==========================================================================
+   Translate
+   ========================================================================== */
+.en {
+    color: #aeaeae;
+}
+.es {
+    
+    color:#ee6817;
+}
+.check {
+    cursor: pointer;
+    position: relative;
+    width: 50px;
+}
+.check:before{
+    content: " ";
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #3b3b3b;
+    border-radius: 25px;
+}
+.check:after{
+    content: " ";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #ee6817;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #aeaeae;
+    box-sizing: border-box;
+}
+.check:checked:after{
+left:25px;
+border:2px solid #aeaeae;
+}
+.check:checked:before{
+background: #ee6817
+}
+
 /* ==========================================================================
    #About Screen
    ========================================================================== */
