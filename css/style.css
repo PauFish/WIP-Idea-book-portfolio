@@ -655,8 +655,9 @@ a.totop-link {
 }
 .es {
     
-    color:#ee6817;
+    color:#aeaeae;
 }
+
 .check {
     cursor: pointer;
     position: relative;
@@ -669,6 +670,7 @@ a.totop-link {
     height: 25px;
     background: #3b3b3b;
     border-radius: 25px;
+    color: #aeaeae;
 }
 .check:after{
     content: " ";
@@ -680,14 +682,14 @@ a.totop-link {
     transition: 0.25s;
     border: 2px solid #aeaeae;
     box-sizing: border-box;
+    
 }
 .check:checked:after{
 left:25px;
 border:2px solid #aeaeae;
+
 }
-.check:checked:before{
-background: #ee6817
-}
+
 
 /* ==========================================================================
    #About Screen
