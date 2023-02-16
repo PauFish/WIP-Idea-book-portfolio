@@ -523,9 +523,11 @@ h5 {
     width: 1720px;
     background-color: #000;
 }
+
+
 .content {
     width: 804px;
-    overflow-y: hidden;
+    overflow-y: scroll; /*Harper poner hidden*/
     height: 100%;
     float: left;
     -webkit-transition: background 0.3s linear;
@@ -1411,7 +1413,6 @@ iframe, embed, object {
   }
   iframe {
     position: relative;
-    pointer-events: none;
   }
   figure {
     position: relative;
