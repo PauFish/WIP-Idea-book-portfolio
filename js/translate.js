@@ -9,3 +9,8 @@ function idioms(){
         location.href="../index.html"; 
     }
 }
+
+
+
+
+

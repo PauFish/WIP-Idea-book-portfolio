@@ -1,7 +1,7 @@
 @import url('normalize.css');
 
 /* ==========================================================================
-   Change Scrollbars colors Chrome, Safari...
+   Change Scrollbars colors Chrome, Safari... and selection
    ========================================================================== */
 ::-webkit-scrollbar{
     /*width: .0em; } hide scrollbar*/
@@ -23,7 +23,9 @@
 
 }
 
-
+::selection{
+    Background: #ee6817;
+}
 
 /* ==========================================================================
 Firefox Change Scrollbars colors 
@@ -35,8 +37,6 @@ Firefox Change Scrollbars colors
         scrollbar-width: thin;
     }
 }
-
-
 
 
 /*
@@ -525,7 +525,7 @@ h5 {
 }
 .content {
     width: 804px;
-    overflow-y: scroll;
+    overflow-y: hidden;
     height: 100%;
     float: left;
     -webkit-transition: background 0.3s linear;
@@ -652,11 +652,14 @@ a.totop-link {
    ========================================================================== */
 .en {
     color: #aeaeae;
-}
-.es {
     
-    color:#aeaeae;
 }
+
+.es {
+    color: #aeaeae;
+}
+
+
 
 .check {
     cursor: pointer;
@@ -670,7 +673,6 @@ a.totop-link {
     height: 25px;
     background: #3b3b3b;
     border-radius: 25px;
-    color: #aeaeae;
 }
 .check:after{
     content: " ";
@@ -1393,7 +1395,26 @@ iframe, embed, object {
 
 
 /* ==========================================================================
-   #Scrollbar
+   #Video
    ========================================================================== */
 
+   video {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform:translate(-50%, -50%);
+  }
+  iframe {
+    position: relative;
+    pointer-events: none;
+  }
+  figure {
+    position: relative;
+    height: 100%;
+  }
   
